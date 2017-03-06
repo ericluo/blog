@@ -1,12 +1,23 @@
 # main links
 main:
+  - title: "名言警句"
+    url: /quotes/
+  - title: "About"
+    url: /about/
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+archive:
+  - title: "归档检索"
+    children:
+      - title: "按标签"
+        url: /tags/
+
+      - title: "按类别"
+        url: /categories/
+
+      - title: "按年份"
+        url: /year-archive/

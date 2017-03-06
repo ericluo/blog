@@ -18,7 +18,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : custom # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -66,21 +66,22 @@ og_image                 : # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links                  : # An array of links to social media profiles
 
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-72449510-4
 
-
+baidu_tongji_id: 4a3ff0f6f6602b52b3bdeaad5c92ad51  # 百度访问统计
+duoshuo_shortname: ericluo                         # 多说评论插件
 # Site Author
 author:
-  name             : "Atom"
+  name             : "MrAlpha"
   avatar           : "/assets/images/avatar.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "中国"
   email            :
   uri              :
   bitbucket        :
@@ -241,6 +242,20 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
-      share: true
+      comments:  true
+      share: # true
       related: true
+      sidebar:
+        nav: "archive"
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+  # _foo
+  - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
