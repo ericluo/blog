@@ -46,6 +46,7 @@ tags: editor sa
 
 - gist-it 在`Atom`中分享代码片段到<https://gist.github.com>
 
+- autocomplete-emojis 支持在`Atom`中直接自动完成并预览对应的emoji。
 
 # 不同电脑之间配置文件的同步
 
