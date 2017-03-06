@@ -1,12 +1,23 @@
 ---
-title: Jupyter Notebook使用笔记
-
-tags: tips
+title: "Python学习笔记"
+tags: Python
 ---
+
+## Pandas
+
+### FAQ
+
+- 如何将Panel降维扁平化
+
+> 可以通过 `xs`、`minor_xs`或`major_xs`函数将三维的`Panel`转换为两维的`Dataframe`
+
+[Pands in 15 minutes](http://www.cnblogs.com/chaosimple/p/4153083.html)
+
+## Jupyter
 
 `Jupyter Notebook` 是一个很方便的学习、研究和文档撰写平台。通过这两天的研究，已经初步掌握了其日常的用法。通过在 `Markdown` 文档中嵌入 `Python` 的脚本，可以通过后者来生成动态的图片、表格，甚至还可以增加一些动态的交互效果。
 
-## 设置主页目录
+### 设置主页目录
 
 默认状态下，`Notebook` 的 HOME 目录设置在当前用户主目录下。该目录混杂了所有用户相关的文件信息，比较杂乱。而且，该目录下的文件没有进行自动云端同步。不同电脑之间的研究文档同步只能通过手动操作，比较繁琐。
 

@@ -1,8 +1,12 @@
 ---
-title: Windows电脑生产环节配置
-date: "2017-02-09 21:54"
-tags: sa
+title: Windows配置
+tags: sa Windows
+permalink: /docs/windows/
 ---
+
+Windows上进行软件开发一直都是种种坑，但是现在的办公环境只能是在Windows下。因此，再苦再难也要克服啊！本文专治Windows平台上的不服，着力打造一个顺手的研究和学习环境。
+
+{% include toc title='文章大纲' %}
 
 # 工具软件
 
@@ -100,3 +104,7 @@ tags: sa
 # 股票软件
 
 主要有看行情的同花顺和用于交易的平安证券、银河证券等。
+
+# 无障碍上网
+
+GFW的限制，导致很多网站无法访问，也造成了很多应用工具使用不正常，如`gist`, `gmail`等。今天发现了一个好用的翻墙软件 [蓝灯(Lantern)](https://github.com/getlantern/forum)，可以替代'更换host文件'等阶段性有效的方法和工具。
