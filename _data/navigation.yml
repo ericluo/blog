@@ -27,15 +27,20 @@ archive:
         url: /year-archive/
 
 docs:
-  - title: 研究平台简介
+  - title: 平台简介
     children:
       - title: 个人研究平台
         url: /docs/study_guide/
-      - title: Python
-        url: /docs/python/
       - title: Vim
         url: /docs/vim/
       - title: Atom
         url: /docs/atom/
       - title: Windows安装配置
         url: /docs/windows/
+
+  - title: 相关技术
+    children:
+      - title: Jekyll
+        url: /docs/jekyll
+      - title: Python
+        url: /docs/python/

@@ -5,6 +5,8 @@ tags: editor sa
 
 借着这两天的空闲，将自己日常用的编辑器从`Sublime`切换到了`Atom`，前者基于`Python`的内核，后者基于现代的`Web`技术。前者更新较慢，没有大公司或团队支撑，后者是`Github`出品，且版本更新更为频繁。更重要的是，其使用了基于`Coffeescript`, `Less`的JavaScript和css的成熟技术，以`Chrome`为内核，更具有现代感。在页面展示上效果更佳！特别是在编写`Markdown`的过程中，可以在编辑器内进行展示，太强大了。
 
+{% include toc %}
+
 # 插件安装设置
 
 由于安装插件的网站被墙了，导致安装时进程会出一些莫名其妙的错误。解决方案是：要么使用`VPN`，要么使用国内的源。幸运的是国内已有相关的镜像了！在 `~\.atom\.apmrc`文件（如果没有这个文件，新建一个）中，添加如下两条配置信息：
@@ -28,9 +30,9 @@ tags: editor sa
 
 - platformio-ide-terminal 编辑器中的终端管理包
 
-  - terminal-plus 同上，但是暂时有bug，无法正常使用
+  - terminal-plus 同上，但是暂时有bug，无法正常使用。
 
-  **该包目前在`Windows10`下有`bug`,打开终端后，系统frozen了，无法使用，目前没有办法解决。**
+    **该包目前在`Windows10`下有`bug`,打开终端后，系统frozen了，无法使用，目前没有办法解决。**
 
 - script 执行各种脚本文件的包
 
@@ -41,6 +43,8 @@ tags: editor sa
 - atom-chrome 使用Atom来编辑Chrome中的文本框
 
 - eval-and-replace 用于动态执行代码片段
+
+- gist-it 在`Atom`中分享代码片段到<https://gist.github.com>
 
 
 # 不同电脑之间配置文件的同步
