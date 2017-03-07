@@ -6,6 +6,16 @@ tags: jekyll
 
 `Jekyll`使用了`kramdown`作为`Markdown`的解释引擎，其具有比标准的`Markdown`更多的扩展标记，因此也能提供更加丰富的表现形式。
 
+支持的标签有：
+
+- [Definition Lists](https://kramdown.gettalong.org/syntax.html#definition-lists)
+- [Tables](https://kramdown.gettalong.org/syntax.html#tables)
+- [Block Attributes](https://kramdown.gettalong.org/syntax.html#block-ials)
+- [Extensions](https://kramdown.gettalong.org/syntax.html#extensions)
+- [Footnotes](https://kramdown.gettalong.org/syntax.html#footnotes)
+- [Abbreviations](https://kramdown.gettalong.org/syntax.html#abbreviations)
+- [Inline Attributes](https://kramdown.gettalong.org/syntax.html#span-ials)
+
 ## [Liquid](https://shopify.github.io/liquid/)
 
 `Jekyll`使用了`Liquid`语言作为模板语言，其主要有三种类型：
@@ -45,11 +55,11 @@ tags: jekyll
 在Windows上启动`jekyll`以后，会碰到的问题如下：
 
 ```bash
- GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
+  GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
 ```
 
 ```bash
-> Error: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed
+  Error: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed
 ```
 
 主要解决的问题有：
