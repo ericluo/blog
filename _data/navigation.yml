@@ -27,7 +27,7 @@ archive:
         url: /year-archive/
 
 docs:
-  - title: 平台搭建
+  - title: 研究平台
     children:
       - title: 个人研究平台简介
         url: /docs/study_guide/
@@ -36,10 +36,11 @@ docs:
       - title: Atom
         url: /docs/atom/
 
-  - title: 研究报告
+  - title: 投资体系
     children:
       - title: 选股策略
-        url: /docs/select_stock
+        url: /docs/select_stock/
+
   - title: 技术笔记
     children:
       - title: Jekyll

@@ -67,7 +67,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links                  : # An array of links to social media profiles
-
+    - "http://xueqiu.com/9735150649"
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
@@ -81,7 +81,7 @@ author:
   name             : "MrAlpha"
   avatar           : "/assets/images/avatar.jpg"
   bio              : "日拱一卒"
-  location         : "中国天南海北"
+  location         : "天南海北"
   email            :
   uri              :
   bitbucket        :
@@ -246,7 +246,7 @@ defaults:
       author_profile: true
       read_time: true
       comments:  true
-      share: # true
+      share:   true
       related: true
       sidebar:
         nav: "archive"

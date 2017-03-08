@@ -30,7 +30,7 @@ tags: jekyll
 
   - **Variable**: assign, capture
 
-- **Filter** map, sort, uniq, etc
+- **Filter** map, sort, uniq, *strip_html*, *url_encode*, *url_decode*, etc
 
 
 ## jekyll-gist插件

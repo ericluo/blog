@@ -3,7 +3,26 @@ title: "Python学习笔记"
 tags: Python
 ---
 
-## Pandas
+## Pandas`与`plotly`
+
+在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了。**更重要的是，还可以对图像进行动态的更新，而不需要对原有文档进行更新，倒是可以省不少事。**
+
+`plotly`账号信息：
+
+> username: luowenbo  
+> API Key: Gn3DdXs0bNM3e5uecjB1
+
+### 在文章中引用图像
+
+可以通过`iframe`技术来在文章中直接引用生产的图像文件。
+
+```html
+<iframe width="800" height="600" frameborder="0" scrolling="no"  src="//plot.ly/~luowenbo/2.embed"></iframe>
+```
+
+**并可以用[参数](http://help.plot.ly/embed-graphs-in-websites/#step-8-customize-the-iframe)来控制图像中的相关元素。**
+
+![](http://7xonmk.com1.z0.glb.clouddn.com/2017-03-04_13-05-47.png)
 
 ### FAQ
 
@@ -38,5 +57,3 @@ c.NotebookApp.notebook_dir = u"C:\\Usersi\\CBRC\\OneDrive\\workspace\\investment
 ```
 
 - 重启 `Jupyter`，就可以看到 HOME 目录已经更新了。
-
-Enjoy！
