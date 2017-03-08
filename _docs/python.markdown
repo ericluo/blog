@@ -1,16 +1,44 @@
 ---
-title: "Python学习笔记"
 tags: Python
 ---
 
-## Pandas`与`plotly`
+{% include toc %}
+
+## 时间转换
+
+在Python中经常要用到的时间格式的转换，如从字符串转换为日期格式，或是从日期格式转换为字符串，还有时候需要将整数数值型转换为字符串。可以借助于标准库 `datetime`中的相关函数来实现。
+
+```python
+import datetime
+d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
+```
+
+## 函数式编程
+
+> map filter zip enumerate range str tuple type
+
+
+## `Pandas`
+
+`Pandas`中常用的对象主要有`DataFrame`、`Series`和`Panel`，3个不同对象之间提供了相应的方法可以相互转化。3个对象中比较好用的方法记录如下：
+
+- Series
+  - value_counts 统计序列中不同值的个数
+  - size
+
+
+- DataFrame
+  - fillna 将`NA`替换为缺省值
+  - sort_index
+  - groupby(['year', 'sex'])
+  - pivot_table('births', rows='year', cols='sex', aggfunc=sum)
+
+
+### `plotly`
 
 在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了。**更重要的是，还可以对图像进行动态的更新，而不需要对原有文档进行更新，倒是可以省不少事。**
 
-`plotly`账号信息：
-
-> username: luowenbo  
-> API Key: Gn3DdXs0bNM3e5uecjB1
+`plotly`账号信息（在ricequant上的文档中有记录）：
 
 ### 在文章中引用图像
 
@@ -29,8 +57,6 @@ tags: Python
 - 如何将Panel降维扁平化
 
 > 可以通过 `xs`、`minor_xs`或`major_xs`函数将三维的`Panel`转换为两维的`Dataframe`
-
-[Pands in 15 minutes](http://www.cnblogs.com/chaosimple/p/4153083.html)
 
 ## Jupyter
 
@@ -57,3 +83,9 @@ c.NotebookApp.notebook_dir = u"C:\\Usersi\\CBRC\\OneDrive\\workspace\\investment
 ```
 
 - 重启 `Jupyter`，就可以看到 HOME 目录已经更新了。
+
+## Links
+
+- [pandas](http://pandas.pydata.org)
+- [Python中文开发者社区](http://pythontab.com)
+- [Pands in 15 minutes](http://www.cnblogs.com/chaosimple/p/4153083.html)

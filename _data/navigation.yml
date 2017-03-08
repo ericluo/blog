@@ -49,3 +49,5 @@ docs:
         url: /docs/python/
       - title: Vim
         url: /docs/vim/
+      - title: Git
+        url: /docs/git/
