@@ -27,20 +27,24 @@ archive:
         url: /year-archive/
 
 docs:
-  - title: 平台简介
+  - title: 平台搭建
     children:
-      - title: 个人研究平台
+      - title: 个人研究平台简介
         url: /docs/study_guide/
-      - title: Vim
-        url: /docs/vim/
-      - title: Atom
-        url: /docs/atom/
       - title: Windows安装配置
         url: /docs/windows/
+      - title: Atom
+        url: /docs/atom/
 
-  - title: 相关技术
+  - title: 研究报告
+    children:
+      - title: 选股策略
+        url: /docs/select_stock
+  - title: 技术笔记
     children:
       - title: Jekyll
         url: /docs/jekyll
       - title: Python
         url: /docs/python/
+      - title: Vim
+        url: /docs/vim/
