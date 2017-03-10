@@ -38,6 +38,8 @@ docs:
 
   - title: 投资体系
     children:
+      - title: 投资体系
+        url: /docs/invest_system/
       - title: 选股策略
         url: /docs/select_stock/
 

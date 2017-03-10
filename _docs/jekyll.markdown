@@ -16,6 +16,11 @@ tags: jekyll
 - [Abbreviations](https://kramdown.gettalong.org/syntax.html#abbreviations)
 - [Inline Attributes](https://kramdown.gettalong.org/syntax.html#span-ials)
 
+### 小技巧
+
+- 在行尾加2个或更多的空格可以添加换行(`<br/>`)
+- 当缩进4个空格无法正确转义代码块中的标签时，可以使用 `raw` 块，参见本文档 `gist` 部分。
+
 ## [Liquid](https://shopify.github.io/liquid/)
 
 `Jekyll`使用了`Liquid`语言作为模板语言，其主要有三种类型：
