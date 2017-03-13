@@ -48,6 +48,9 @@ tags: editor sa
 
 - autocomplete-emojis 支持在`Atom`中直接自动完成并预览对应的emoji。
 
+- atom-csv-markdown 将csv格式的数据转换为`Markdown`的表格
+
+
 # 不同电脑之间配置文件的同步
 
 可以通过`sync-settings`来进行不同电脑之间配置文件的同步，其使用了`gist`作为后端存储。因此在系统配置上需要做如下设置：
