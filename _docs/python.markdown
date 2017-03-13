@@ -4,15 +4,17 @@ tags: Python
 
 {% include toc %}
 
-## `_builtins_`中包括的数据类型
+## `_builtins_`
 
-该模块中包含的数据类型 `type` 有：
+
+### 数据类型 `type`
 
 - bytearray,bytes, complex, float, int, bool
 - classmethod, property, staticmethod, type
 - dict, list, set, frozenset,  range, *slice*, tuple, str
 - enumerate, filter, map, zip
 
+### 函数 `function`
 ## 时间转换
 
 在Python中经常要用到的时间格式的转换，如从字符串转换为日期格式，或是从日期格式转换为字符串，还有时候需要将整数数值型转换为字符串。可以借助于标准库 `datetime`中的相关函数来实现。
