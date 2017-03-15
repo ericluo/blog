@@ -27,6 +27,11 @@ archive:
         url: /year-archive/
 
 docs:
+  - title: 投资实战
+    children:
+      - title: 2017年投资笔记
+        url: /docs/2017_investment_notes/
+
   - title: 研究平台
     children:
       - title: 个人研究平台简介
