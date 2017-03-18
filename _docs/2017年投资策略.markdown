@@ -3,7 +3,7 @@
 title: 2017年投资策略
 date: '2016-12-23 10:00'
 tags: 投资策略
-permalink: /docs/2017_investment_notes
+permalink: /docs/2017_investment_notes/
 ---
 ## 投资大方向
 
