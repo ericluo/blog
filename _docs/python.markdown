@@ -31,6 +31,8 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
 
 ## `Pandas`
 
+可以通过`set_option`相关函数来对`Pandas`的输入和显示效果进行设置，如通过`display.precision`控制项来设置浮点数显示的位数。
+
 `Pandas`中常用的对象主要有`DataFrame`、`Series`和`Panel`，3个不同对象之间提供了相应的方法可以相互转化。3个对象中比较好用的方法记录如下：
 
 - Series
@@ -44,7 +46,9 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
   - groupby(['year', 'sex'])
   - pivot_table('births', rows='year', cols='sex', aggfunc=sum)
 
+- Panel
 
+  - 可以通过 `xs`、`minor_xs`或`major_xs`函数将三维的`Panel`转换为两维的`Dataframe`
 ### `plotly`
 
 在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了。**更重要的是，还可以对图像进行动态的更新，而不需要对原有文档进行更新，倒是可以省不少事。**
@@ -65,9 +69,7 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
 
 ### FAQ
 
-- 如何将Panel降维扁平化
 
-> 可以通过 `xs`、`minor_xs`或`major_xs`函数将三维的`Panel`转换为两维的`Dataframe`
 
 ## Jupyter
 

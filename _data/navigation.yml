@@ -31,6 +31,8 @@ docs:
     children:
       - title: 2017年投资笔记
         url: /docs/2017_investment_notes/
+      - title: 银行财报数据分析接口
+        url: /docs/bank_report_analysis/
 
   - title: 研究平台
     children:
