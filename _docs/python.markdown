@@ -45,10 +45,21 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
   - sort_index
   - groupby(['year', 'sex'])
   - pivot_table('births', rows='year', cols='sex', aggfunc=sum)
+  - filter(regex = pattern)
 
 - Panel
 
+  - 构造函数
+    - pd.Panel(data)
+    - pd.Panel.from_dict(data, orient='minor')
+    - df.to_panel() ** df with a two-level index **
+
   - 可以通过 `xs`、`minor_xs`或`major_xs`函数将三维的`Panel`转换为两维的`Dataframe`
+
+  - 改变`axis`的数据类型
+
+    `panel.minor_axis = pd.to_datatime(panel.minor_axis, format="%Y%m%d")`
+
 ### `plotly`
 
 在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了。**更重要的是，还可以对图像进行动态的更新，而不需要对原有文档进行更新，倒是可以省不少事。**
