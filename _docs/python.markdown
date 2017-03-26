@@ -47,12 +47,13 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
   - pivot_table('births', rows='year', cols='sex', aggfunc=sum)
   - filter(regex = pattern)
 
-- Panel
 
+- Panel
   - 构造函数
     - pd.Panel(data)
     - pd.Panel.from_dict(data, orient='minor')
     - df.to_panel() ** df with a two-level index **
+
 
   - 可以通过 `xs`、`minor_xs`或`major_xs`函数将三维的`Panel`转换为两维的`Dataframe`
 
