@@ -2,6 +2,12 @@
 tags: jekyll
 ---
 
+## 升级`jekyll`
+
+要定期升级`jekyll`的版本，使之与`github`上的版本一致。
+
+    bundle update
+
 ## [kramdown](https://kramdown.gettalong.org/quickref.html)
 
 `Jekyll`使用了`kramdown`作为`Markdown`的解释引擎，其具有比标准的`Markdown`更多的扩展标记，因此也能提供更加丰富的表现形式。
