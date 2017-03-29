@@ -31,7 +31,11 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
 
 ## `Pandas`
 
-可以通过`set_option`相关函数来对`Pandas`的输入和显示效果进行设置，如通过`display.precision`控制项来设置浮点数显示的位数。
+可以通过`set_option`相关函数来对`Pandas`的输入和显示效果进行设置，如通过 `display.precision` 控制项来设置浮点数显示的位数。
+
+```python
+  pd.set_option('display.precision', 2) # default to 6
+```
 
 `Pandas`中常用的对象主要有`DataFrame`、`Series`和`Panel`，3个不同对象之间提供了相应的方法可以相互转化。3个对象中比较好用的方法记录如下：
 
