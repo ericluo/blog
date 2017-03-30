@@ -2,6 +2,7 @@
 title: 财报分析笔记
 tags: 年报
 categories: 投资
+permalink: /docs/finanice_report_analysis_note/
 ---
 
 在财报季，重温 @唐朝 的《手把手教你读财报》，希望建立能够建立比较系统的财报分析框架，并用以指导财报的研究与分析。
