@@ -68,19 +68,25 @@ permalink: /docs/finanice_report_analysis_note/
   固定资产要计提折旧和减值准备，从利润表扣除
 
 - 在建工程(construction_in_progress)
+
 - 工程物资(engineer_material)
+
 - 无形资产(intangible_assets)
 
   无形资产的摊销要在利润表扣除
 
 - 商誉(goodwill)
+
 - 长期待摊费用(long_term_deferred_expenses)
 
   **费用资本化**，越小越好
 
 - 递延所得税资产(deferred_charges)
+
 - 递延所得税负债()
+
 - 其他流动资产(other_current_assets)
+
 - 其他非流动资产(other_non_current_assets)
 
 ### 投资相关资产
@@ -108,4 +114,5 @@ permalink: /docs/finanice_report_analysis_note/
   根据股权投资的类型（控制、合营、联营、其他），按成本法或权益法进行利润核算。**上市公司持有子公司的股权（控制类），按照成本法进行核算，体现于母公司的资产负债表里，子公司宣布的分红记入当期母公司的当期利润表。但是在制作合并报表时，需要全部转换成权益法核算。实际操作中，是将控股子公司全部合并进来，然后将非本公司占股份部分单独列为“少数股东权益”和“少数股东损益”。**
 
 - 投资性房地产
+
 - 其他金融资产
