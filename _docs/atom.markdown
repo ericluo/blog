@@ -44,6 +44,8 @@ tags: editor sa
 
 - eval-and-replace 用于动态执行代码片段
 
+  对于拷贝的url可以通过coffeescript `decodeURI 'encoded url'` 来对其进行解码，然后`Execute coffeeScript`即可。
+
 - gist-it 在`Atom`中分享代码片段到<https://gist.github.com>
 
 - autocomplete-emojis 支持在`Atom`中直接自动完成并预览对应的emoji。
