@@ -12,10 +12,11 @@ permalink: /docs/finanice_report_analysis_note/
 
 ## 几个关键指标
 
-- 应收账款/营业收入
-- 存货/营业成本
+- 应收账款周转率 营业收入/应收账款
+- 存货周转率 营业成本/存货
+- 流动比率
+- 速动比率
 - 商誉/总资产
-
 
 ## 资产负债表
 
@@ -148,3 +149,7 @@ permalink: /docs/finanice_report_analysis_note/
   - 短期借款 short_term_loans
   - 长期借款 long_term_loans
   - 应付债券 bond_payable
+
+## 利润表和现金流量表
+
+按照资产负债表同样的方法，可以使用`ricequant`的财务数据查询接口，查询并导出利润表和现金流量表的各个科目的数据。考虑到类似的应用很多，最好的方法是通过该数据接口提前对应股票的全部科目数据到`pandas`中，参见[](https://www.ricequant.com/research/user/user_293835/notebooks/基本面研究/个股研究框架.ipynb)
