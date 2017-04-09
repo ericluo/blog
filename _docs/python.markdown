@@ -15,6 +15,7 @@ tags: Python
 - enumerate, filter, map, zip
 
 ### 函数 `function`
+
 ## 时间转换
 
 在Python中经常要用到的时间格式的转换，如从字符串转换为日期格式，或是从日期格式转换为字符串，还有时候需要将整数数值型转换为字符串。可以借助于标准库 `datetime`中的相关函数来实现。
@@ -75,7 +76,7 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
 
     df.style.format("{:,.2%}")
     df.style.format({columnlabel: "{:,.2%}"})
-    
+
 ### `plotly`
 
 在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了。**更重要的是，还可以对图像进行动态的更新，而不需要对原有文档进行更新，倒是可以省不少事。**
@@ -93,6 +94,55 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
 **并可以用[参数](http://help.plot.ly/embed-graphs-in-websites/#step-8-customize-the-iframe)来控制图像中的相关元素。**
 
 ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-03-04_13-05-47.png)
+
+#### traces & layout
+
+`plotly`中的两类对象是`traces` 和 `layout`。[API Reference](https://plot.ly/python/reference/#layout)
+
+调用方法如下：
+
+```python
+data = [
+    go.Scatter(                         # all "scatter" attributes: https://plot.ly/python/reference/#scatter
+        x=[1, 2, 3],                    # more about "x":  /python/reference/#scatter-x
+        y=[3, 1, 6],                    # more about "y":  /python/reference/#scatter-y
+        marker=dict(                    # marker is an dict, marker keys: /python/reference/#scatter-marker
+            color="rgb(16, 32, 77)"     # more about marker's "color": /python/reference/#scatter-marker-color
+        )
+    ),
+    go.Bar(                         # all "bar" chart attributes: /python/reference/#bar
+        x=[1, 2, 3],                # more about "x": /python/reference/#bar-x
+        y=[3, 1, 6],                # /python/reference/#bar-y
+        name="bar chart example"    # /python/reference/#bar-name
+    )
+]
+
+layout = go.Layout(             # all "layout" attributes: /python/reference/#layout
+    title="simple example",     # more about "layout's" "title": /python/reference/#layout-title
+    xaxis=dict(                 # all "layout's" "xaxis" attributes: /python/reference/#layout-xaxis
+        title="time"            # more about "layout's" "xaxis's" "title": /python/reference/#layout-xaxis-title
+    ),
+    annotations=[
+        dict(                            # all "annotation" attributes: /python/reference/#layout-annotations
+            text="simple annotation",    # /python/reference/#layout-annotations-text
+            x=0,                         # /python/reference/#layout-annotations-x
+            xref="paper",                # /python/reference/#layout-annotations-xref
+            y=0,                         # /python/reference/#layout-annotations-y
+            yref="paper"                 # /python/reference/#layout-annotations-yref
+        )
+    ]
+)
+
+figure = go.Figure(data=data, layout=layout)
+
+py.plot(figure, filename='api-docs/reference-graph')
+```
+
+#### cufflinks
+
+[Link](https://github.com/santosjorge/cufflinks)
+
+其调用方法为: `df.iplot(xTitle='', yTitle='', title='', layout='')`
 
 ### FAQ
 
