@@ -77,13 +77,35 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
     df.style.format("{:,.2%}")
     df.style.format({columnlabel: "{:,.2%}"})
 
-### `plotly`
+### [`plotly`](https://plot.ly/pandas/)
 
 在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了。**更重要的是，还可以对图像进行动态的更新，而不需要对原有文档进行更新，倒是可以省不少事。**
 
 `plotly`账号信息（在ricequant上的文档中有记录）：
 
-### 在文章中引用图像
+通过底层的`API`来使用`plotly`比较繁琐，如下面的示例。但是可以通过`cufflinks`库来辅助直接在`dataframe`上使用`iplot`进行画图。但是对于比较复杂的图，折必须通过原始的`plotly API`来进行画图。
+
+```python
+
+import plotly
+import plotly.plotly as py
+import plotly.tools as tls
+import plotly.graph_objs as go
+
+plotly.offline.init_notebook_mode()
+
+fig = tls.make_subplots(rows=2, cols=1, shared_xaxes=True)
+
+for bank in dfs['净利差']:
+    fig.append_trace(go.Scatter(x=data.major_axis, y=dfs['净利差'][bank], name=bank), 1,1)
+for bank in dfs['净息差']:
+    fig.append_trace(go.Scatter(x=data.major_axis, y=dfs['存贷差'][bank], name=bank), 2,1)
+
+plotly.offline.iplot(fig)
+
+```
+
+#### 在文章中引用图像
 
 可以通过`iframe`技术来在文章中直接引用生产的图像文件。
 
@@ -138,11 +160,18 @@ figure = go.Figure(data=data, layout=layout)
 py.plot(figure, filename='api-docs/reference-graph')
 ```
 
-#### cufflinks
-
-[Link](https://github.com/santosjorge/cufflinks)
+#### [cufflinks](https://github.com/santosjorge/cufflinks)
 
 其调用方法为: `df.iplot(xTitle='', yTitle='', title='', layout='')`
+
+`cufflinks`也提供了一些方法来生产`subplots`，如：
+
+```python
+df = pd.DataFrame(np.random.rand(10,2), columns=['Col1', 'Col2'] )
+df['X'] = pd.Series(['A','A','A','A','A','B','B','B','B','B'])
+figs=[df[df['X']==d][['Col1','Col2']].iplot(kind='box',asFigure=True) for d in pd.unique(df['X']) ]
+cf.iplot(cf.subplots(figs))
+```
 
 ### FAQ
 
