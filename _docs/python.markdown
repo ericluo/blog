@@ -173,6 +173,13 @@ figs=[df[df['X']==d][['Col1','Col2']].iplot(kind='box',asFigure=True) for d in p
 cf.iplot(cf.subplots(figs))
 ```
 
+##### 饼图
+
+在使用饼图之前，一定要想想是否合适，可能用其他的图(如柱状头bar)具有更好的表现力。
+
+```python
+df.iplot(kind='pie', labels=, values=, hole=0.3, textposition='inside',textinfo='label+percent+value', legend=False)
+```
 ### FAQ
 
 
