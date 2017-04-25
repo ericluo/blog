@@ -2,7 +2,7 @@
 title: "交易失败的几点心得"
 author: MrAlpha
 date: "2017-04-19 20:37"
-tags: 每周回顾
+tags: 每周复盘
 categories: 投资
 ---
 
