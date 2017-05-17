@@ -49,8 +49,13 @@ docs:
     children:
       - title: 投资体系
         url: /docs/invest_system/
-      - title: 选股策略
-        url: /docs/select_stock/
+
+  - title: 选股策略
+    children:
+      - title: 三率选股
+        url: /docs/select_stock/three_ratio/
+      - title: 巴菲特选股
+        url: /docs/select_stock/wb/
 
   - title: 技术笔记
     children:
