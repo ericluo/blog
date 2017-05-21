@@ -2,6 +2,7 @@
 title: "房地产投资思考"
 author: MrAlpha
 date: "2017-05-20 06:51"
+comments: true
 tags: 地产
 categories: 投资
 ---
