@@ -67,7 +67,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links                  : # An array of links to social media profiles
-    - "http://xueqiu.com/9735150649"
+    - "http://xueqiu.com/atom"
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
@@ -75,7 +75,6 @@ analytics:
     tracking_id          : UA-72449510-4
 
 baidu_tongji_id: 4a3ff0f6f6602b52b3bdeaad5c92ad51  # 百度访问统计
-duoshuo_shortname: ericluo                         # 多说评论插件
 # Site Author
 author:
   name             : "MrAlpha"
