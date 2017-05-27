@@ -29,8 +29,10 @@ archive:
 docs:
   - title: 投资实战
     children:
-      - title: 2017年投资笔记
+      - title: 2017年投资策略
         url: /docs/2017_investment_notes/
+      - title: 财报分析框架
+        url: /docs/finanice_report_analysis_framework/
       - title: 财报分析笔记
         url: /docs/finanice_report_analysis_note/
       - title: 银行财报数据分析接口
@@ -42,8 +44,7 @@ docs:
         url: /docs/study_guide/
       - title: Windows安装配置
         url: /docs/windows/
-      - title: Atom
-        url: /docs/atom/
+
 
   - title: 投资体系
     children:
@@ -59,6 +60,8 @@ docs:
 
   - title: 技术笔记
     children:
+      - title: Atom
+        url: /docs/atom/
       - title: Jekyll
         url: /docs/jekyll
       - title: Python
@@ -67,3 +70,5 @@ docs:
         url: /docs/vim/
       - title: Git
         url: /docs/git/
+      - title: Windows电脑安装配置
+        url: /docs/windows/
