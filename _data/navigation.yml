@@ -37,6 +37,8 @@ docs:
         url: /docs/finanice_report_analysis_note/
       - title: 银行财报数据分析接口
         url: /docs/bank_report_analysis/
+      - title: 房地产分析
+        url: /docs/real_estate/
 
   - title: 研究平台
     children:
