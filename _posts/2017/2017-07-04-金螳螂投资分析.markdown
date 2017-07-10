@@ -20,7 +20,7 @@ tags: 金螳螂
 ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-07-06_15-27-53.jpg)
 
 除公司自身业绩状况和行业发展整体态势外，还应该分析同类同规模企业的经营状况：是公司的个案还是具有普遍性，能够得到合理的解释。
-{: .notice }
+{: .notice--info}
 
 ### P9的分季营收、净利和经营现金流净额表格显示，公司的经营现金流净额在不同季节里波动很大。以往年份是否同样具备这个特点，是什么原因造成的，你如何看待这个问题，会否成为估值扣分项？
 
@@ -44,9 +44,8 @@ tags: 金螳螂
 
   从市场容量来看，公装和家装基本上评分秋色。增速呈不断下降趋势。
 
-  ![](http://7xonmk.com1.z0.glb.clouddn.com/1494205485598890.png)
-
-  ![](http://7xonmk.com1.z0.glb.clouddn.com/1494205526989237.png)
+  ![](http://7xonmk.com1.z0.glb.clouddn.com/1494205485598890.png){: .align-left}
+  ![](http://7xonmk.com1.z0.glb.clouddn.com/1494205526989237.png){: .align-right}
 
 - 房地产
 
