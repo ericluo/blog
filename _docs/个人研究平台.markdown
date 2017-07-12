@@ -30,6 +30,17 @@ tags: 投资 写作 Python
 
 参见[Atom编辑器]({{ site.baseurl }}{% link _docs/atom.markdown %})以及[Jekyll]({{ site.baseurl}}{% link _docs/jekyll.markdown %})
 
+### 博客项目配置
+
+设置好基础环境后，就可以在`Atom`中开始写博客了。等等，博客写好了，部署在哪里啊？怎么访问呢？哈哈，这就要靠`GitHub`来帮忙了。写作的文档都部署在`GitHub`上<git@github.com:ericluo/blog.git>。
+
+将上面的项目`clone`下来后，设置好`branch`，具体操作如下：
+
+```bash
+  git clone git@github.com:ericluo/blog.git
+  git checkout -b gh-pages --track origin/gh-pages
+```
+
 ## 图片处理
 
 在撰写文章时，有时候会用到很多图片，但图片不合适放到`GitHub`平台上。因为图片容量较大，且不是文本格式。同时`GitHub`的网速较慢，存放大量图片会导致网站访问体验差。
