@@ -51,9 +51,9 @@ tags: jekyll
 
 接下来，就需要在`markdown`文档中引用刚刚创建的`gist`。
 
-{% raw %}
-  {% gist ericluo/8a94b03781aaa65941b6978c9b89c578 %}
-{% endraw %}
+
+    {% gist ericluo/8a94b03781aaa65941b6978c9b89c578 %}
+
 
 {% gist ericluo/8a94b03781aaa65941b6978c9b89c578 %}
 
